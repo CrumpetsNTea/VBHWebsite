@@ -26,7 +26,7 @@
 
 .text {
   position: absolute;
-  bottom: 5em;
+  bottom: 7em;
   left: 50%;
   margin-left: -45%;
   width: 90%;
@@ -39,7 +39,7 @@
 
 .web {
   position: absolute;
-  bottom: 4.3em;
+  bottom: 6em;
   left: 50%;
   margin-left: -45%;
   width: 90%;

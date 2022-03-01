@@ -20,22 +20,22 @@ const Team = () => {
         <ReactRoundedImage
           image={Iouri}
           roundedColor="#321124"
-          imageWidth="300"
-          imageHeight="300"
+          imageWidth="350"
+          imageHeight="350"
           roundedSize="0"
         />
         <ReactRoundedImage
           image={Tobias}
           roundedColor="#321124"
-          imageWidth="300"
-          imageHeight="300"
+          imageWidth="350"
+          imageHeight="350"
           roundedSize="0"
         />
         <ReactRoundedImage
           image={Connor}
           roundedColor="#321124"
-          imageWidth="300"
-          imageHeight="300"
+          imageWidth="350"
+          imageHeight="350"
           roundedSize="0"
         />
       </div>
