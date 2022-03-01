@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 import Nav from "./components/Nav";
 import Specialties from "./components/Specialties";
@@ -11,6 +12,7 @@ function App() {
       <LandingPage />
       <Specialties />
       <Team />
+      <Footer />
     </div>
   );
 }

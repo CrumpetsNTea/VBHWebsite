@@ -1,0 +1,15 @@
+#footer {
+  height: 18em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10em;
+  background: #fafafa;
+  color: #8f8e8e;
+}
+
+.footer-text {
+  margin: 0.2em;
+  padding: 0;
+}

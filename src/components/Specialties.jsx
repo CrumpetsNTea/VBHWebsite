@@ -14,7 +14,7 @@ const Specialties = () => {
           <strong>
             <u>specialize</u>
           </strong>{" "}
-          in
+          in:
         </p>
       </div>
 
