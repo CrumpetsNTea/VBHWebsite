@@ -1,0 +1,50 @@
+.specialty-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
+}
+.slideshow {
+  margin-left: 8.5em;
+  display: flex;
+  align-items: center;
+}
+
+.specialize {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+
+  color: #858585;
+}
+
+.carousel .slide .legend {
+  bottom: 165px;
+}
+
+.text {
+  position: absolute;
+  bottom: 5em;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.web {
+  position: absolute;
+  bottom: 4.3em;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}

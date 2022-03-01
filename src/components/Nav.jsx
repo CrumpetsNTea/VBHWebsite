@@ -4,15 +4,17 @@ const Nav = () => {
   return (
     <Navbar sticky="top">
       <div id="name">
-        <h3>VBH</h3>
+        <h2>VBH</h2>
       </div>
 
       <div id="menu">
-        <h5>about</h5>
-        <h5>services</h5>
-        <h5>projects</h5>
-        <h5>blog</h5>
-        <h5>contact us</h5>
+        <p className="menu-item">about</p>
+        <p className="menu-item">services</p>
+        <p className="menu-item">projects</p>
+        <p className="menu-item">blog</p>
+        <p className="menu-item" id="contact">
+          contact us
+        </p>
       </div>
     </Navbar>
   );

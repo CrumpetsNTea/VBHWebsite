@@ -1,0 +1,21 @@
+#team-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#team-photos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#text {
+  margin-top: 4em;
+  padding-left: 2em;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 67px;
+
+  color: #858585;
+}
