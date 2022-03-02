@@ -32,7 +32,7 @@ const Specialties = () => {
           width={"90%"}>
           <div>
             <img src={NFTs} alt="NFTs" />
-            <h1 className="text">NFTs</h1>
+            <h1 className="nft">NFTs</h1>
           </div>
           <div>
             <img src={WebDev} alt="Web Development" />
@@ -42,7 +42,7 @@ const Specialties = () => {
           </div>
           <div>
             <img src={Marketing} alt="Marketing" />
-            <h1 className="text">Marketing</h1>
+            <h1 className="market">Marketing</h1>
           </div>
         </Carousel>
       </div>

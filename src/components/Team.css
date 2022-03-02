@@ -16,3 +16,55 @@
 
   color: #858585;
 }
+
+#iouri {
+  border-radius: 30em;
+  width: 350px;
+  height: 350px;
+}
+
+#tobias {
+  border-radius: 30em;
+  width: 350px;
+  height: 350px;
+}
+
+#connor {
+  border-radius: 30em;
+  width: 350px;
+  height: 350px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:hover .text {
+  opacity: 1;
+  background-color: rgb(197, 197, 197, 0.7);
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.5em;
+  height: 16.6em;
+  top: 7.8em;
+  border-radius: 100em;
+
+  margin-left: 0.01em;
+  opacity: 0;
+  transition: 0.5s ease;
+
+  color: white;
+  font-size: 20px;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

@@ -2,7 +2,6 @@ import "./Team.css";
 import Tobias from "../images/headshotbw.jpeg";
 import Iouri from "../images/iouribw.png";
 import Connor from "../images/connor.jpeg";
-import ReactRoundedImage from "react-rounded-image";
 
 const Team = () => {
   return (
@@ -17,27 +16,29 @@ const Team = () => {
         </p>
       </div>
       <div id="team-photos">
-        <ReactRoundedImage
-          image={Iouri}
-          roundedColor="#321124"
-          imageWidth="350"
-          imageHeight="350"
-          roundedSize="0"
-        />
-        <ReactRoundedImage
-          image={Tobias}
-          roundedColor="#321124"
-          imageWidth="350"
-          imageHeight="350"
-          roundedSize="0"
-        />
-        <ReactRoundedImage
-          image={Connor}
-          roundedColor="#321124"
-          imageWidth="350"
-          imageHeight="350"
-          roundedSize="0"
-        />
+        <div className="container">
+          <img src={Iouri} alt="Iouri" id="iouri"></img>
+          <div className="overlay"></div>
+          <p className="text">
+            Iuori Volkov <br></br>Co-Founder | CEO
+            <br></br>Full-Stack Dev
+          </p>
+        </div>
+        <div className="container">
+          <img src={Tobias} alt="Tobias" id="tobias"></img>
+          <p className="text">
+            Tobias Botell <br></br>Co-Founder | CMO
+            <br></br>Full-Stack Dev
+          </p>
+        </div>
+
+        <div className="container">
+          <img src={Connor} alt="Connor" id="connor"></img>
+          <p className="text">
+            Connor Hughes <br></br>Co-Founder | CTO
+            <br></br>Full-Stack Dev
+          </p>
+        </div>
       </div>
     </>
   );
