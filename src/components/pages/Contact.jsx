@@ -1,13 +1,19 @@
 import "./Contact.css";
 import { Button } from "@mui/material";
-
+import SendRoundedIcon from "@mui/icons-material/SendRounded";
 const Contact = () => {
   return (
     <div>
       <div id="container">
-        <div className="email">
+        <div className="contactus">
           <h1 id="contact-title">Contact Us</h1>
+          <p className="contact-copy">
+            We would love to hear from you! Send us an email to book a
+            consultation, or just to ask us any questions 😊
+          </p>
+        </div>
 
+        <div className="contactus-form">
           <form
             target="_blank"
             action="https://formsubmit.co/e1b339b9a8156e18552f3371af9f6826"
@@ -40,7 +46,11 @@ const Contact = () => {
                 rows="10"
                 required></textarea>
             </div>
-            <Button variant="contained" type="submit" className="submit-button">
+            <Button
+              variant="contained"
+              type="submit"
+              className="submit-button"
+              endIcon={<SendRoundedIcon />}>
               Send
             </Button>
           </form>

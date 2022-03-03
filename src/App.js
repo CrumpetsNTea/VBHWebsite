@@ -13,8 +13,9 @@ import Contact from "./components/pages/Contact";
 function App() {
   return (
     <Router>
+      <Nav />
+
       <div className="App">
-        <Nav />
         <Switch>
           <Route exact path="/">
             <LandingPage />
@@ -31,9 +32,8 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

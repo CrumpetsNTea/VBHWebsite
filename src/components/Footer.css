@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10em;
   background: #fafafa;
   color: #8f8e8e;
+  margin-top: 10em;
 }
 
 .footer-text {

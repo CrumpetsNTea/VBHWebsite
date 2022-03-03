@@ -46,10 +46,7 @@ const About = () => {
           <p>
             VB&H Consulting Co. was founded by three fellow friends and
             Full-Stack Developers. We offer consulting services for all of your
-            wildest tech ideas. We specialize in Full-Stack Web Development, and
-            Blockchain Development, having experience building complex web
-            applications, and developing Smart Contracts for a variety of
-            Blockchain projects. We can offer a full end-to-end consulting
+            wildest tech ideas. We can offer a full end-to-end consulting
             experience, where we design, develop, and deploy your website or web
             application. Reach out today to{" "}
             <Link to="/contact">book a consulting appointment</Link> with us! 😄

@@ -1,35 +1,13 @@
 #contact-title {
-  color: white;
+  color: rgb(79, 79, 79);
 }
 
 #container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 5em;
   padding-top: 8em;
-}
-
-#contact {
-  margin: 0;
-  padding-bottom: 0.5em;
-  color: rgb(109, 109, 109);
-}
-
-.email {
-  margin-bottom: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 35em;
-  width: 55em;
-  border-radius: 1%;
-  background-color: #6b6b6b;
-}
-
-.form-group {
-  display: flex;
 }
 
 .message {
@@ -38,21 +16,19 @@
 }
 
 .message-form {
-  width: 39em;
+  width: 25em;
+  height: 8em;
   border-radius: 2%;
   font-family: "Raleway", sans-serif;
   border: 2px solid rgb(126, 126, 126);
-}
-
-.email-container {
-  padding-left: 2em;
+  border-radius: 0.5em;
 }
 
 .form-control {
   margin-top: 1em;
-  height: 3em;
-  width: 18em;
-  border-radius: 5%;
+  height: 2.5em;
+  width: 25em;
+  border-radius: 0.5em;
   border: 2px solid rgb(126, 126, 126);
 }
 
@@ -67,4 +43,12 @@ textarea::placeholder {
 
 .submit-button {
   width: 100%;
+}
+
+.contactus-form {
+  margin-top: 1em;
+}
+
+.contact-copy {
+  width: 14em;
 }
