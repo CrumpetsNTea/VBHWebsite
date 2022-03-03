@@ -8,6 +8,7 @@ import Team from "./components/Team";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./components/pages/About";
 import Blog from "./components/pages/Blog";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/blog">
             <Blog />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
 
