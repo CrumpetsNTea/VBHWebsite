@@ -1,0 +1,13 @@
+.blogs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  padding-left: 1em;
+}
+
+#postlink {
+  text-decoration: none;
+  color: black;
+}
