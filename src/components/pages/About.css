@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-team-photos {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-bottom: 2em;
+  margin-top: 5em;
+}
+
+.about-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  width: 50em;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+.about-body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
