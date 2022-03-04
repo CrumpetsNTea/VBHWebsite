@@ -44,7 +44,7 @@
 
 .container:hover .text {
   opacity: 1;
-  background-color: rgb(197, 197, 197, 0.9);
+  background-color: rgba(68, 68, 68, 0.9);
 }
 
 .text {

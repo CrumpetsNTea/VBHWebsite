@@ -19,11 +19,15 @@
   margin-top: 4em;
   width: 50em;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .about-body-container {
+  color: #383838;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about-body-line {
+  margin-top: 0.2em;
 }

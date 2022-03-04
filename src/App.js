@@ -10,6 +10,7 @@ import About from "./components/pages/About";
 import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
 import Services from "./components/pages/Services";
+import Projects from "./components/pages/Projects";
 
 function App() {
   return (
@@ -26,14 +27,17 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
           <Route path="/blog">
             <Blog />
           </Route>
           <Route path="/contact">
             <Contact />
-          </Route>
-          <Route path="/services">
-            <Services />
           </Route>
         </Switch>
       </div>

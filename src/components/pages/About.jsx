@@ -44,14 +44,14 @@ const About = () => {
 
         <div className="about-body-container">
           <div className="about-body">
-            <p>
+            <p className="about-body-line">
               VB&H Consulting Co. was founded by three fellow friends and
               Full-Stack Developers.
             </p>
-            <p>
+            <p className="about-body-line">
               We offer consulting services for all of your wildest tech ideas.
             </p>
-            <p>
+            <p className="about-body-line">
               Reach out today to{" "}
               <Link to="/contact">book a consulting appointment</Link> with us!
               😄

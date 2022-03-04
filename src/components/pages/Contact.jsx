@@ -9,7 +9,7 @@ const Contact = () => {
           <h1 id="contact-title">Contact Us</h1>
           <p className="contact-copy">
             We would love to hear from you! Send us an email to book a
-            consultation, or just to ask us any questions 😊
+            consultation, or to ask us any questions 😊
           </p>
         </div>
 

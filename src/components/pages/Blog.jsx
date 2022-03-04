@@ -6,9 +6,10 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import { Box } from "@mui/material";
+import { LinearProgress } from "@mui/material";
 
 import "./Blog.css";
-import Footer from "../Footer";
 
 const Blog = () => {
   const tobiasMediumURL =
@@ -36,6 +37,7 @@ const Blog = () => {
     error: null,
   });
 
+  // Get Tobias Articles
   useEffect(() => {
     fetch(tobiasMediumURL)
       .then((res) => res.json())
@@ -47,6 +49,7 @@ const Blog = () => {
       .catch((err) => setTobiasBlog({ error: err.message }));
   }, []);
 
+  // Get Connor Articles
   useEffect(() => {
     fetch(connorMediumURL)
       .then((res) => res.json())
@@ -58,6 +61,7 @@ const Blog = () => {
       .catch((err) => setConnorBlog({ error: err.message }));
   }, []);
 
+  // Get Iouri Articles
   useEffect(() => {
     fetch(iouriMediumURL)
       .then((res) => res.json())
@@ -69,6 +73,7 @@ const Blog = () => {
       .catch((err) => setIouriBlog({ error: err.message }));
   }, []);
 
+  // Convert article text to text rather than the html that is given by the JSON
   const ToText = (node) => {
     let tag = document.createElement("div");
     tag.innerHTML = node;
@@ -87,44 +92,46 @@ const Blog = () => {
               spacing={{ xs: 5, md: 7 }}
               columns={{ xs: 4, sm: 8, md: 12 }}>
               <Grid item xs={8} sm={8} md={8}>
-                {tobiasBlog.isLoading
-                  ? "Loading..."
-                  : tobiasBlog.item.map((post, index) => {
-                      return (
-                        <Card sx={{ maxWidth: 345 }} key={index}>
-                          <a href={post.link} id="postlink">
-                            <CardActionArea>
-                              <CardMedia
-                                component="img"
-                                height="140"
-                                image={post.thumbnail}
-                                alt="stacked books"
-                              />
-                              <CardContent>
-                                <Typography
-                                  gutterBottom
-                                  variant="h5"
-                                  component="div">
-                                  {post.title}
-                                </Typography>
-                                <Typography
-                                  variant="body2"
-                                  color="text.secondary">
-                                  {ToText(post.description).slice(0, 150) +
-                                    "..."}
-                                </Typography>
-                              </CardContent>
-                            </CardActionArea>
-                          </a>
-                        </Card>
-                      );
-                    })}
+                {tobiasBlog.isLoading ? (
+                  <Box sx={{ width: "100%" }}>
+                    <LinearProgress />
+                  </Box>
+                ) : (
+                  tobiasBlog.item.map((post, index) => {
+                    return (
+                      <Card sx={{ maxWidth: 345 }} key={index}>
+                        <a href={post.link} id="postlink">
+                          <CardActionArea>
+                            <CardMedia
+                              component="img"
+                              height="140"
+                              image={post.thumbnail}
+                              alt="stacked books"
+                            />
+                            <CardContent>
+                              <Typography
+                                gutterBottom
+                                variant="h5"
+                                component="div">
+                                {post.title}
+                              </Typography>
+                              <Typography
+                                variant="body2"
+                                color="text.secondary">
+                                {ToText(post.description).slice(0, 150) + "..."}
+                              </Typography>
+                            </CardContent>
+                          </CardActionArea>
+                        </a>
+                      </Card>
+                    );
+                  })
+                )}
               </Grid>
             </Grid>
           </Container>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 };
