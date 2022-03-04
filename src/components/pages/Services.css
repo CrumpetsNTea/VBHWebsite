@@ -29,19 +29,15 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  color: #505050;
+  color: #5a5a5a;
+  font-weight: 700;
   gap: 0.1em;
 }
 
 .col-title {
   margin: 0;
   padding: 0;
-}
-
-.services {
-  margin: 0;
-  margin-top: 2em;
-  color: #626262;
+  color: #555555;
 }
 
 #content {
