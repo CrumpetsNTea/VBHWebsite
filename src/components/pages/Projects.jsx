@@ -43,10 +43,12 @@ const Projects = () => {
                           alt={project.name}
                         />
                         <CardContent sx={{ flexGrow: 1 }}>
-                          <Typography gutterBottom variant="h5" component="h2">
+                          <Typography gutterBottom variant="h5" component="div">
                             {project.name}
                           </Typography>
-                          <Typography>{project.description}</Typography>
+                          <Typography color="text.secondary">
+                            {project.description}
+                          </Typography>
                         </CardContent>
                         <CardActions>
                           {project.website ? (

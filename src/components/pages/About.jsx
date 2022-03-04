@@ -53,8 +53,10 @@ const About = () => {
             </p>
             <p className="about-body-line">
               Reach out today to{" "}
-              <Link to="/contact">book a consulting appointment</Link> with us!
-              😄
+              <Link to="/contact" className="link">
+                <u>book a consulting appointment</u>
+              </Link>{" "}
+              with us! 😄
             </p>
           </div>
         </div>
