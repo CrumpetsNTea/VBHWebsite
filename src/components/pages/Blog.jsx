@@ -8,6 +8,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 
 import "./Blog.css";
+import Footer from "../Footer";
 
 const Blog = () => {
   const tobiasMediumURL =
@@ -76,51 +77,55 @@ const Blog = () => {
   };
 
   return (
-    <div className="blog-container">
-      <h1 className="title">Our Blog Posts</h1>
-      <div className="blogs">
-        <Container sx={{ py: 8, ml: 2 }} maxWidth="md">
-          <Grid
-            container
-            spacing={{ xs: 5, md: 7 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}>
-            <Grid item xs={8} sm={8} md={8}>
-              {tobiasBlog.isLoading
-                ? "Loading..."
-                : tobiasBlog.item.map((post, index) => {
-                    return (
-                      <Card sx={{ maxWidth: 345 }} key={index}>
-                        <a href={post.link} id="postlink">
-                          <CardActionArea>
-                            <CardMedia
-                              component="img"
-                              height="140"
-                              image={post.thumbnail}
-                              alt="stacked books"
-                            />
-                            <CardContent>
-                              <Typography
-                                gutterBottom
-                                variant="h5"
-                                component="div">
-                                {post.title}
-                              </Typography>
-                              <Typography
-                                variant="body2"
-                                color="text.secondary">
-                                {ToText(post.description).slice(0, 150) + "..."}
-                              </Typography>
-                            </CardContent>
-                          </CardActionArea>
-                        </a>
-                      </Card>
-                    );
-                  })}
+    <>
+      <div className="blog-container">
+        <h1 className="title">Our Blog Posts</h1>
+        <div className="blogs">
+          <Container sx={{ py: 8, ml: 2 }} maxWidth="md">
+            <Grid
+              container
+              spacing={{ xs: 5, md: 7 }}
+              columns={{ xs: 4, sm: 8, md: 12 }}>
+              <Grid item xs={8} sm={8} md={8}>
+                {tobiasBlog.isLoading
+                  ? "Loading..."
+                  : tobiasBlog.item.map((post, index) => {
+                      return (
+                        <Card sx={{ maxWidth: 345 }} key={index}>
+                          <a href={post.link} id="postlink">
+                            <CardActionArea>
+                              <CardMedia
+                                component="img"
+                                height="140"
+                                image={post.thumbnail}
+                                alt="stacked books"
+                              />
+                              <CardContent>
+                                <Typography
+                                  gutterBottom
+                                  variant="h5"
+                                  component="div">
+                                  {post.title}
+                                </Typography>
+                                <Typography
+                                  variant="body2"
+                                  color="text.secondary">
+                                  {ToText(post.description).slice(0, 150) +
+                                    "..."}
+                                </Typography>
+                              </CardContent>
+                            </CardActionArea>
+                          </a>
+                        </Card>
+                      );
+                    })}
+              </Grid>
             </Grid>
-          </Grid>
-        </Container>
+          </Container>
+        </div>
       </div>
-    </div>
+      {/* <Footer /> */}
+    </>
   );
 };
 
