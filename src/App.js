@@ -1,7 +1,7 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
-import Nav from "./components/Nav";
+import Navigation from "./components/Nav";
 import Specialties from "./components/Specialties";
 import Team from "./components/Team";
 
@@ -15,7 +15,7 @@ import Projects from "./components/pages/Projects";
 function App() {
   return (
     <Router>
-      <Nav />
+      <Navigation />
 
       <div className="App">
         <Switch>

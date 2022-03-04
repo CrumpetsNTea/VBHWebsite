@@ -1,36 +1,52 @@
-import { Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "./Nav.css";
-const Nav = () => {
-  return (
-    <Navbar sticky="top">
-      <div id="name">
-        <Link to="/" className="link">
-          <h2>VBH</h2>
-        </Link>
-      </div>
-
-      <div id="menu">
-        <Link to="/about" className="link">
-          <p className="menu-item">about</p>
-        </Link>
-        <Link to="/services" className="link">
-          <p className="menu-item">services</p>
-        </Link>
-        <Link to="/projects" className="link">
-          <p className="menu-item">projects</p>
-        </Link>
-        <Link to="/blog" className="link">
-          <p className="menu-item">blog</p>
-        </Link>
-        <Link to="/contact" className="link">
-          <p className="menu-item" id="contact">
-            contact us
-          </p>
-        </Link>
-      </div>
-    </Navbar>
-  );
+import { Navbar } from "responsive-navbar-react";
+import "responsive-navbar-react/dist/index.css";
+const Navigation = () => {
+  const props = {
+    items: [
+      {
+        text: "Home",
+        link: "/",
+      },
+      {
+        text: "About",
+        link: "about",
+      },
+      {
+        text: "Services",
+        link: "services",
+      },
+      {
+        text: "Projects",
+        link: "projects",
+      },
+      {
+        text: "Blog",
+        link: "blog",
+      },
+      {
+        text: "Contact",
+        link: "contact",
+      },
+    ],
+    logo: {
+      text: "VBH",
+    },
+    style: {
+      barStyles: {
+        background: "#6b6b6b",
+      },
+      sidebarStyles: {
+        background: "#222",
+        buttonColor: "white",
+        height: 300,
+      },
+      linkStyles: {
+        paddingLeft: 50,
+        color: "white",
+      },
+    },
+  };
+  return <Navbar {...props} />;
 };
 
-export default Nav;
+export default Navigation;

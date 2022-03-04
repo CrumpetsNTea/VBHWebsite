@@ -9,16 +9,15 @@ const LandingPage = () => {
           <strong>
             <u>design</u>
           </strong>
-          ,<br></br>{" "}
+          ,{" "}
           <strong>
             <u>develop</u>
           </strong>
-          , and <br></br>
+          , and{" "}
           <strong>
             <u>deploy</u>
           </strong>{" "}
-          intuitive <br></br> web solutions <br></br> that improve <br></br>
-          your business.
+          intuitive web solutions that improve your business.
         </p>
       </div>
       <div id="logo-landing">

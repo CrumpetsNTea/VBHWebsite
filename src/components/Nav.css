@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   z-index: 10;
   display: flex;
   flex-direction: row;
@@ -38,3 +38,7 @@ h2 {
 #contact {
   margin-right: 1em;
 }
+
+@media screen and (max-width: 768px) {
+  
+} */
