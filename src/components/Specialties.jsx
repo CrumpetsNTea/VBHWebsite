@@ -17,34 +17,31 @@ const Specialties = () => {
           in:
         </p>
       </div>
-
-      <div className="slideshow">
-        <Carousel
-          showStatus={false}
-          useKeyboardArrows={true}
-          stopOnHover={false}
-          // autoPlay={true}
-          infiniteLoop={true}
-          // interval={3000}
-          centerMode={true}
-          centerSlidePercentage={40}
-          showThumbs={false}
-          width={"90%"}>
-          <div>
-            <img src={NFTs} alt="NFTs" />
-            <h1 className="nft">NFTs</h1>
-          </div>
-          <div>
-            <img src={WebDev} alt="Web Development" />
-            <h1 className="web">
-              Web<br></br>Development
-            </h1>
-          </div>
-          <div>
-            <img src={Marketing} alt="Marketing" />
-            <h1 className="market">Marketing</h1>
-          </div>
-        </Carousel>
+      <div className="sw-container">
+        <div className="slideshow">
+          <Carousel
+            className="carousel"
+            showStatus={false}
+            useKeyboardArrows={true}
+            stopOnHover={false}
+            // autoPlay={true}
+            infiniteLoop={true}
+            // interval={3000}
+            centerMode={true}
+            centerSlidePercentage={40}
+            showThumbs={false}
+            width={"100%"}>
+            <div>
+              <img src={NFTs} alt="NFTs" />
+            </div>
+            <div>
+              <img src={WebDev} alt="Web Development" />
+            </div>
+            <div>
+              <img src={Marketing} alt="Marketing" />
+            </div>
+          </Carousel>
+        </div>
       </div>
     </div>
   );

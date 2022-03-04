@@ -20,7 +20,6 @@ const Team = () => {
         <a href="https://www.linkedin.com/in/iourivolkov/">
           <div className="container">
             <img src={Iouri} alt="Iouri" id="iouri"></img>
-            <div className="overlay"></div>
             <p className="text">
               Iuori Volkov <br></br>Co-Founder | CEO
               <br></br>Full-Stack Dev
