@@ -129,8 +129,34 @@
     top: 5.2em;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
   #team-photos {
     gap: 3em;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  #iouri {
+    width: 400px;
+    height: 400px;
+  }
+
+  #tobias {
+    width: 400px;
+    height: 400px;
+  }
+
+  #connor {
+    width: 400px;
+    height: 400px;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 380px;
+    top: 9em;
+    border-radius: 100em;
   }
 }
