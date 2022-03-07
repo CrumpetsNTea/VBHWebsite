@@ -83,8 +83,8 @@ const Blog = () => {
 
   return (
     <>
+      <h1 className="title">Our Blog Posts</h1>
       <div className="blog-container">
-        <h1 className="title">Our Blog Posts</h1>
         <div className="blogs">
           <Container sx={{ py: 8, ml: 2 }} maxWidth="md">
             <Grid
