@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
 const Contact = () => {
   return (
-    <div>
+    <div id="outer">
       <div id="container">
         <div className="contactus">
           <h1 id="contact-title">Contact Us</h1>

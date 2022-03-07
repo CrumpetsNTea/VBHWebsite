@@ -52,3 +52,28 @@ textarea::placeholder {
 .contact-copy {
   width: 14em;
 }
+
+@media screen and (max-width: 800px) {
+  #outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .submit-button {
+    width: 100%;
+  }
+  .contact-copy {
+    width: 20em;
+  }
+
+  .contactus-form {
+    margin-top: 0;
+  }
+}
