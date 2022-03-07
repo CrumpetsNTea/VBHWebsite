@@ -106,7 +106,7 @@ const Blog = () => {
                               component="img"
                               height="140"
                               image={post.thumbnail}
-                              alt="stacked books"
+                              alt="thumbnail"
                             />
                             <CardContent>
                               <Typography
