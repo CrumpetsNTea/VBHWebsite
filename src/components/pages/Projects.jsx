@@ -22,61 +22,66 @@ const Projects = () => {
   ];
 
   return (
-    <div>
+    <>
       <h1 className="title">Our Projects</h1>
-      <div className="projects">
-        <Container sx={{ py: 8, ml: 2 }} maxWidth="md">
-          <Grid
-            container
-            spacing={{ xs: 10, sm: 9, md: 8 }}
-            columns={{ xs: 10, sm: 9, md: 8 }}>
-            <Grid item xs={6} sm={5} md={4}>
-              {projects.map((project) => {
-                return (
-                  <Card sx={{ maxWidth: 345 }}>
-                    <a href={project.website} id="postlink">
-                      <CardActionArea>
-                        <CardMedia
-                          component="img"
-                          height="170"
-                          image={project.image}
-                          alt={project.name}
-                        />
-                        <CardContent sx={{ flexGrow: 1 }}>
-                          <Typography gutterBottom variant="h5" component="div">
-                            {project.name}
-                          </Typography>
-                          <Typography color="text.secondary">
-                            {project.description}
-                          </Typography>
-                        </CardContent>
-                        <CardActions>
-                          {project.website ? (
+      <div className="projects-container">
+        <div className="projects">
+          <Container sx={{ py: 8, ml: 2 }} maxWidth="md">
+            <Grid
+              container
+              spacing={{ xs: 5, md: 7 }}
+              columns={{ xs: 4, sm: 8, md: 12 }}>
+              <Grid item xs={8} sm={8} md={8}>
+                {projects.map((project) => {
+                  return (
+                    <Card sx={{ maxWidth: 345 }}>
+                      <a href={project.website} id="postlink">
+                        <CardActionArea>
+                          <CardMedia
+                            component="img"
+                            height="170"
+                            image={project.image}
+                            alt={project.name}
+                          />
+                          <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography
+                              gutterBottom
+                              variant="h5"
+                              component="div">
+                              {project.name}
+                            </Typography>
+                            <Typography color="text.secondary">
+                              {project.description}
+                            </Typography>
+                          </CardContent>
+                          <CardActions>
+                            {project.website ? (
+                              <Button
+                                size="small"
+                                variant="contained"
+                                href={project.website}>
+                                Website
+                              </Button>
+                            ) : null}
+
                             <Button
                               size="small"
                               variant="contained"
-                              href={project.website}>
-                              Website
+                              href={project.github}>
+                              Github
                             </Button>
-                          ) : null}
-
-                          <Button
-                            size="small"
-                            variant="contained"
-                            href={project.github}>
-                            Github
-                          </Button>
-                        </CardActions>
-                      </CardActionArea>
-                    </a>
-                  </Card>
-                );
-              })}
+                          </CardActions>
+                        </CardActionArea>
+                      </a>
+                    </Card>
+                  );
+                })}
+              </Grid>
             </Grid>
-          </Grid>
-        </Container>
+          </Container>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
