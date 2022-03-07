@@ -5,8 +5,8 @@
   align-items: center;
   margin-top: 4em;
   margin-bottom: 3em;
-  margin-right: 7.8em;
   color: #6b6b6b;
+  font-size: 25px;
 }
 
 #grid {
@@ -38,11 +38,74 @@
   margin: 0;
   padding: 0;
   color: #555555;
+  font-size: 35px;
 }
 
 #content {
-  width: 65em;
+  width: 40em;
   margin-top: 5.6em;
   line-height: 2.5em;
+  font-size: 20px;
   color: #3f3f3f;
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    color: #6b6b6b;
+    font-size: 18px;
+  }
+
+  #grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .col-title {
+    font-size: 35px;
+  }
+
+  #content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25em;
+    margin-top: 7em;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .services-grid {
+    gap: 4em;
+  }
+
+  .col-title {
+    font-size: 30px;
+  }
+
+  #content {
+    display: flex;
+    justify-content: center;
+    width: 38em;
+    margin-top: 5em;
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #content {
+    width: 45em;
+  }
 }

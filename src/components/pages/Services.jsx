@@ -35,39 +35,40 @@ const Services = () => {
             <p>Hosting</p>
           </div>
         </div>
-
-        <p id="content">
-          We specialize in{" "}
-          <strong>
-            <u>Full-Stack Web Development</u>
-          </strong>{" "}
-          and{" "}
-          <strong>
-            <u>Blockchain Development</u>
-          </strong>
-          . As a team, we have experience building complex web applications, and
-          developing{" "}
-          <strong>
-            <u>Smart Contracts</u>
-          </strong>{" "}
-          for a variety of Blockchain projects. We can offer a full{" "}
-          <strong>
-            <u>end-to-end</u>
-          </strong>{" "}
-          consulting experience, where we{" "}
-          <strong>
-            <u>design</u>
-          </strong>
-          ,{" "}
-          <strong>
-            <u>develop</u>
-          </strong>
-          , and{" "}
-          <strong>
-            <u>deploy</u>
-          </strong>{" "}
-          your website or web application.{" "}
-        </p>
+        <div id="content">
+          <p id="content-inner">
+            We specialize in{" "}
+            <strong>
+              <u>Full-Stack Web Development</u>
+            </strong>{" "}
+            and{" "}
+            <strong>
+              <u>Blockchain Development</u>
+            </strong>
+            . As a team, we have experience building complex web applications,
+            and developing{" "}
+            <strong>
+              <u>Smart Contracts</u>
+            </strong>{" "}
+            for a variety of Blockchain projects. We can offer a full{" "}
+            <strong>
+              <u>end-to-end</u>
+            </strong>{" "}
+            consulting experience, where we{" "}
+            <strong>
+              <u>design</u>
+            </strong>
+            ,{" "}
+            <strong>
+              <u>develop</u>
+            </strong>
+            , and{" "}
+            <strong>
+              <u>deploy</u>
+            </strong>{" "}
+            your website or web application.{" "}
+          </p>
+        </div>
       </div>
     </>
   );
