@@ -3,7 +3,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import NFTs from "../images/NFT.png";
 import WebDev from "../images/web.png";
-import Marketing from "../images/market.png";
+import Smart from "../images/Smart.png";
+import UI from "../images/UI.png";
 
 const Specialties = () => {
   return (
@@ -24,9 +25,9 @@ const Specialties = () => {
             showStatus={false}
             useKeyboardArrows={true}
             stopOnHover={false}
-            // autoPlay={true}
+            autoPlay={true}
             infiniteLoop={true}
-            // interval={3000}
+            interval={5000}
             centerMode={true}
             centerSlidePercentage={40}
             showThumbs={false}
@@ -38,7 +39,10 @@ const Specialties = () => {
               <img src={WebDev} alt="Web Development" />
             </div>
             <div>
-              <img src={Marketing} alt="Marketing" />
+              <img src={Smart} alt="Smart Contracts" />
+            </div>
+            <div>
+              <img src={UI} alt="UI" />
             </div>
           </Carousel>
         </div>
