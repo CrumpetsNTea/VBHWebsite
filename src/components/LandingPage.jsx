@@ -1,4 +1,4 @@
-import VBH from "../images/VBHLanding1.jpeg";
+import VBH from "../images/VBHLanding1.png";
 import "./LandingPage.css";
 const LandingPage = () => {
   return (

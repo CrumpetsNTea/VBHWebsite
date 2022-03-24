@@ -1,7 +1,7 @@
 import "./Team.css";
-import Tobias from "../images/headshotbw.jpeg";
+import Tobias from "../images/headshotbw.png";
 import Iouri from "../images/iouribw.png";
-import Connor from "../images/connor.jpeg";
+import Connor from "../images/connor.png";
 
 const Team = () => {
   return (
